@@ -65,10 +65,12 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
+/* Shared */
+
 .container {
 	/* Parent container for the page */
-	width: 875px;
-	margin: auto;
+	width: 880px;
+	margin: 0 auto;
 }
 
 header {
@@ -89,6 +91,8 @@ header nav a {
 	color: grey;
 	text-decoration: none;
 }
+
+/* index.html */
 
 main .titleContainer {
 	/* Same flex as above, but aligning to right side main axis
@@ -139,9 +143,83 @@ main .mainContainer:last-child {
 	margin-bottom: 12px;
 	font-size: 16px;
 }
-
-footer p {
+footer.indexFooter p {
 	margin-top: 50px;
 	text-align: center;
 	font-size: 12px;
+}
+
+/* services.html */
+
+.serviceCont p {
+	line-height: 1.3;
+}
+.services-header-img {
+	margin: 20px 0 38px;
+	display: block;
+}
+.intro h1 {
+	font-size: 25px;
+	font-weight: 700;
+}
+.intro p {
+	padding-bottom: 40px;
+	border-bottom: 1px solid black;
+	margin-bottom: 35px;
+}
+
+.servMainContent {
+	width: 880px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	border-bottom: 2px solid black;
+	margin-bottom: 25px;
+}
+.servMainContent div {
+	width: 420px;
+	background: #f4f3f4;
+	border: 1px solid black;
+	padding: 25px 20px;
+	margin-bottom: 45px;
+}
+.servMainContent div p, footer.servFooter div p {
+	margin-bottom: 20px;
+	font-size: 16px;
+	font-weight: 400;
+}
+.servMainContent div button {
+	width: 150px;
+	height: 35px;
+	background: #fff;
+	font-size: 12px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+footer.servFooter {
+	display: flex;
+	justify-content: space-between;
+}
+footer.servFooter div {
+	width: 420px;
+}
+footer.servFooter p {
+	padding-right: 10px;
+}
+footer.servFooter ul {
+	list-style-type: square;
+	margin: 25px 0 0 20px;
+}
+footer.servFooter ul li {
+	margin-bottom: 10px;
+	font-weight: 500;
+	font-size: 17px;
+}
+
+section.copyright p {
+	margin: 50px 0 20px;
+	text-align: center;
+	font-size: 15px;
+	font-weight: 600;
 }
