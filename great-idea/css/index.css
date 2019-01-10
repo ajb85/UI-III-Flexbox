@@ -177,6 +177,7 @@ footer.indexFooter p {
 	border-bottom: 2px solid black;
 	margin-bottom: 25px;
 }
+/* Stretch goal to make page responsive! */
 @media screen and (max-width: 800px) {
 	.serviceCont {
 		width: 100%;
