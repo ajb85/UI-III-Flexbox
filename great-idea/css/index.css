@@ -132,6 +132,7 @@ main .mainContainer {
 	justify-content: space-between;
 	align-items: center;
 }
+
 main .mainContainer:last-child {
 	/* Border between second set of main content
 	and contact */
@@ -175,6 +176,15 @@ footer.indexFooter p {
 	flex-wrap: wrap;
 	border-bottom: 2px solid black;
 	margin-bottom: 25px;
+}
+@media screen and (max-width: 800px) {
+	.serviceCont {
+		width: 100%;
+	}
+  .servMainContent {
+		width: 100%;
+		justify-content: center;
+  }
 }
 .servMainContent div {
 	width: 420px;
@@ -222,4 +232,87 @@ section.copyright p {
 	text-align: center;
 	font-size: 15px;
 	font-weight: 600;
+}
+
+/* about.html */
+
+.aboutCont {
+	line-height: 1.3;
+}
+
+.aboutIntro {
+	margin: 50px 0;
+	border-bottom: 1px solid black;
+	padding-bottom: 30px;
+}
+
+.aboutIntro h1 {
+	margin: 30px 0 10px;
+	font-size: 25px;
+}
+
+.aboutMainContent {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.aboutMainContent div {
+	width: 400px;
+	padding: 10px 10px 15px 10px;
+	margin-bottom: 40px;
+	position: relative;
+}
+@keyframes raiseAboutDIV {
+	from { bottom: 0px;}
+	to { bottom: 10px;box-shadow: 2px 7px 12px rgba(0, 0, 0, 0.3); }
+}
+.aboutMainContent div:hover {
+	animation-name: raiseAboutDIV;
+	animation-duration: 0.5s;
+	animation-fill-mode: both;
+}
+.aboutMainContent div h2 {
+	text-align: center;
+	text-decoration: underline;
+}
+.aboutMainContent div button {
+	display: block;
+	margin: 15px auto 0;
+	background: transparent;
+	border: 1px solid black;
+	width: 130px;
+	height: 30px;
+	cursor: pointer;
+}
+@keyframes animateButton {
+	to {background: #969696;}
+}
+.aboutMainContent div button:hover {
+	animation-name: animateButton;
+	animation-duration: 0.5s;
+	animation-fill-mode: both;
+}
+
+.meetingIMG {
+	display: block;
+	margin: auto;
+}
+.aboutFooter {
+	margin: 30px 0;
+	padding-top: 40px;
+	border-top: 1px solid black;
+	display: flex;
+	justify-content: space-between;
+}
+.aboutFooter div {
+	width: 350px;
+	margin-left: 10px;
+}
+.aboutFooter div p {
+	margin-bottom : 7px;
+}
+.aboutFooter div ol {
+	list-style-type: decimal;
+  list-style-position: inside;
+	margin-bottom: 7px;
 }
